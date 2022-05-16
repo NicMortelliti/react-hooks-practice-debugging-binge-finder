@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Episode from "./Components/Episode";
+import Episode from "./Episode";
 
 function SelectedShowContainer(props) {
   const selectedSeason = useState(1);
