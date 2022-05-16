@@ -19,14 +19,10 @@ function SelectedShowContainer(props) {
   }
 
   function mapEpisodes() {
-    console.log(props.allEpisodes);
-    return props.allEpisodes.map((e) => {
-      if (e.season === selectedSeason) {
-        return <Episode eachEpisode={e} key={e.id} />;
-      } else {
-        return null;
-      }
-    });
+    return props.allEpisodes.map(
+      (e) =>
+        e.season === selectedSeason && <Episode eachEpisode={e} key={e.id} />
+    );
   }
 
   function handleSelectionChange(e) {
