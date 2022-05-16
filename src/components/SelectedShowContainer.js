@@ -20,7 +20,7 @@ function SelectedShowContainer(props) {
 
   function mapEpisodes() {
     return props.episodes.map((e) => {
-      if (e.season == selectedSeason) {
+      if (e.season === selectedSeason) {
         return <Episode eachEpisode={e} key={e.id} />;
       } else {
         return null;
@@ -52,12 +52,12 @@ function SelectedShowContainer(props) {
 
 export default SelectedShowContainer;
 
-Array.prototype.unique = function () {
-  const arr = [];
-  for (let i = 0; i < this.length; i++) {
-    if (!arr.includes(this[i])) {
-      arr.push(this[i]);
-    }
-  }
-  return arr;
-};
+// Array.prototype.unique = function () {
+//   const arr = [];
+//   for (let i = 0; i < this.length; i++) {
+//     if (!arr.includes(this[i])) {
+//       arr.push(this[i]);
+//     }
+//   }
+//   return arr;
+// };
