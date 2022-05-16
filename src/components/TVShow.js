@@ -5,7 +5,7 @@ function tvShow(props) {
     <div>
       <br />
       <img
-        src={props.show.medium}
+        src={props.show.image.medium}
         onClick={props.selectShow}
         alt={props.show.name}
       />
