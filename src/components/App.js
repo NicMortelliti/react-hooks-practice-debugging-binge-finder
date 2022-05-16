@@ -32,7 +32,7 @@ function App() {
 
   function selectShow(show) {
     Adapter.getShowEpisodes(show.id).then((episodes) => {
-      setSelectedShow(show);
+      setSelectedShow(show.id);
       setEpisodes(episodes);
     });
   }
